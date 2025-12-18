@@ -1,0 +1,85 @@
+.main-conatiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 80px 80px;
+}
+
+.form-section {
+    background: rgba(255,255,255,0.7);
+    padding: 30px;
+    border-radius: 15px;
+    width: 45%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    flex-shrink: 0;
+}
+
+.form-section h2 {
+    margin-bottom: 20px;
+    color: #12372a;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    font-size: 1em;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#reset-btn {
+    background-color: #d9534f;
+    color: white;
+}
+
+#rec-btn {
+    background-color: #5f8d4e;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.result-container {
+    width: 30%;
+    background: rgba(255,255,255,0.7);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    flex-shrink: 0;
+}
+
+.result-container h3 {
+    color: #12372a;
+    margin-bottom: 20px;
+}
+
+.result-container {
+    font-size: 1.2em;
+    color: #555;
+}
