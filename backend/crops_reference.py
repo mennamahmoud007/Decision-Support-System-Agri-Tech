@@ -4,153 +4,263 @@ CROPS = {
         "temp_max": 25,
         "heat_tolerance": "low",
         "water_need": "medium",
-        "rainfall_dependency": "medium"
+        "rainfall_dependency": "medium",
+        "nitrogen_need": "medium",
+        "phosphorus_need": "medium",
+        "potassium_need": "medium",
+        "ph_min": 6.0,
+        "ph_max": 7.0
     },
     "banana": {
         "temp_min": 25,
         "temp_max": 35,
         "heat_tolerance": "high",
         "water_need": "high",
-        "rainfall_dependency": "high"
+        "rainfall_dependency": "high",
+        "nitrogen_need": "high",
+        "phosphorus_need": "medium",
+        "potassium_need": "high",
+        "ph_min": 5.5,
+        "ph_max": 7.0
     },
     "blackgram": {
         "temp_min": 25,
         "temp_max": 35,
         "heat_tolerance": "high",
         "water_need": "medium",
-        "rainfall_dependency": "medium"
+        "rainfall_dependency": "medium",
+        "nitrogen_need": "medium",
+        "phosphorus_need": "low",
+        "potassium_need": "medium",
+        "ph_min": 6.0,
+        "ph_max": 7.0
     },
     "chickpea": {
         "temp_min": 20,
         "temp_max": 30,
         "heat_tolerance": "medium",
         "water_need": "low",
-        "rainfall_dependency": "low"
+        "rainfall_dependency": "low",
+        "nitrogen_need": "low",
+        "phosphorus_need": "medium",
+        "potassium_need": "low",
+        "ph_min": 6.0,
+        "ph_max": 7.0
     },
     "coconut": {
         "temp_min": 27,
         "temp_max": 35,
         "heat_tolerance": "high",
         "water_need": "high",
-        "rainfall_dependency": "high"
+        "rainfall_dependency": "high",
+        "nitrogen_need": "high",
+        "phosphorus_need": "medium",
+        "potassium_need": "high",
+        "ph_min": 5.5,
+        "ph_max": 7.5
     },
     "coffee": {
         "temp_min": 18,
         "temp_max": 28,
         "heat_tolerance": "medium",
         "water_need": "medium",
-        "rainfall_dependency": "high"
+        "rainfall_dependency": "high",
+        "nitrogen_need": "medium",
+        "phosphorus_need": "medium",
+        "potassium_need": "medium",
+        "ph_min": 6.0,
+        "ph_max": 6.5
     },
     "cotton": {
         "temp_min": 21,
         "temp_max": 35,
         "heat_tolerance": "high",
         "water_need": "medium",
-        "rainfall_dependency": "medium"
+        "rainfall_dependency": "medium",
+        "nitrogen_need": "medium",
+        "phosphorus_need": "medium",
+        "potassium_need": "medium",
+        "ph_min": 5.8,
+        "ph_max": 7.0
     },
     "grapes": {
         "temp_min": 15,
         "temp_max": 30,
         "heat_tolerance": "medium",
         "water_need": "medium",
-        "rainfall_dependency": "low"
+        "rainfall_dependency": "low",
+        "nitrogen_need": "low",
+        "phosphorus_need": "medium",
+        "potassium_need": "medium",
+        "ph_min": 5.5,
+        "ph_max": 7.0
     },
     "jute": {
         "temp_min": 25,
         "temp_max": 35,
         "heat_tolerance": "high",
         "water_need": "high",
-        "rainfall_dependency": "high"
+        "rainfall_dependency": "high",
+        "nitrogen_need": "high",
+        "phosphorus_need": "medium",
+        "potassium_need": "high",
+        "ph_min": 5.5,
+        "ph_max": 6.5
     },
     "kidneybeans": {
         "temp_min": 20,
         "temp_max": 30,
         "heat_tolerance": "medium",
         "water_need": "medium",
-        "rainfall_dependency": "medium"
+        "rainfall_dependency": "medium",
+        "nitrogen_need": "medium",
+        "phosphorus_need": "medium",
+        "potassium_need": "medium",
+        "ph_min": 6.0,
+        "ph_max": 7.0
     },
     "lentil": {
         "temp_min": 15,
         "temp_max": 25,
         "heat_tolerance": "low",
         "water_need": "low",
-        "rainfall_dependency": "low"
+        "rainfall_dependency": "low",
+        "nitrogen_need": "low",
+        "phosphorus_need": "low",
+        "potassium_need": "low",
+        "ph_min": 6.0,
+        "ph_max": 7.0
     },
     "maize": {
         "temp_min": 18,
         "temp_max": 35,
         "heat_tolerance": "high",
         "water_need": "medium",
-        "rainfall_dependency": "medium"
+        "rainfall_dependency": "medium",
+        "nitrogen_need": "medium",
+        "phosphorus_need": "medium",
+        "potassium_need": "medium",
+        "ph_min": 6.0,
+        "ph_max": 7.0
     },
     "mango": {
         "temp_min": 24,
         "temp_max": 35,
         "heat_tolerance": "high",
         "water_need": "medium",
-        "rainfall_dependency": "medium"
+        "rainfall_dependency": "medium",
+        "nitrogen_need": "medium",
+        "phosphorus_need": "medium",
+        "potassium_need": "medium",
+        "ph_min": 5.5,
+        "ph_max": 7.0
     },
     "mothbeans": {
         "temp_min": 25,
         "temp_max": 35,
         "heat_tolerance": "high",
         "water_need": "low",
-        "rainfall_dependency": "low"
+        "rainfall_dependency": "low",
+        "nitrogen_need": "low",
+        "phosphorus_need": "low",
+        "potassium_need": "low",
+        "ph_min": 6.0,
+        "ph_max": 7.5
     },
     "mungbean": {
         "temp_min": 25,
         "temp_max": 35,
         "heat_tolerance": "high",
         "water_need": "medium",
-        "rainfall_dependency": "medium"
+        "rainfall_dependency": "medium",
+        "nitrogen_need": "medium",
+        "phosphorus_need": "medium",
+        "potassium_need": "medium",
+        "ph_min": 6.0,
+        "ph_max": 7.0
     },
     "muskmelon": {
         "temp_min": 25,
         "temp_max": 35,
         "heat_tolerance": "high",
         "water_need": "medium",
-        "rainfall_dependency": "low"
+        "rainfall_dependency": "low",
+        "nitrogen_need": "medium",
+        "phosphorus_need": "medium",
+        "potassium_need": "medium",
+        "ph_min": 6.0,
+        "ph_max": 7.0
     },
     "orange": {
         "temp_min": 15,
         "temp_max": 30,
         "heat_tolerance": "medium",
         "water_need": "medium",
-        "rainfall_dependency": "medium"
+        "rainfall_dependency": "medium",
+        "nitrogen_need": "medium",
+        "phosphorus_need": "medium",
+        "potassium_need": "medium",
+        "ph_min": 5.5,
+        "ph_max": 7.0
     },
     "papaya": {
         "temp_min": 22,
         "temp_max": 35,
         "heat_tolerance": "high",
         "water_need": "high",
-        "rainfall_dependency": "medium"
+        "rainfall_dependency": "medium",
+        "nitrogen_need": "high",
+        "phosphorus_need": "medium",
+        "potassium_need": "high",
+        "ph_min": 5.5,
+        "ph_max": 7.0
     },
     "pigeonpeas": {
         "temp_min": 20,
         "temp_max": 35,
         "heat_tolerance": "high",
         "water_need": "low",
-        "rainfall_dependency": "low"
+        "rainfall_dependency": "low",
+        "nitrogen_need": "low",
+        "phosphorus_need": "low",
+        "potassium_need": "low",
+        "ph_min": 6.0,
+        "ph_max": 7.0
     },
     "pomegranate": {
         "temp_min": 20,
         "temp_max": 35,
         "heat_tolerance": "high",
         "water_need": "low",
-        "rainfall_dependency": "low"
+        "rainfall_dependency": "low",
+        "nitrogen_need": "low",
+        "phosphorus_need": "low",
+        "potassium_need": "low",
+        "ph_min": 6.0,
+        "ph_max": 7.0
     },
     "rice": {
         "temp_min": 20,
         "temp_max": 35,
         "heat_tolerance": "medium",
         "water_need": "high",
-        "rainfall_dependency": "high"
+        "rainfall_dependency": "high",
+        "nitrogen_need": "high",
+        "phosphorus_need": "medium",
+        "potassium_need": "medium",
+        "ph_min": 5.5,
+        "ph_max": 7.0
     },
     "watermelon": {
         "temp_min": 25,
         "temp_max": 35,
         "heat_tolerance": "high",
         "water_need": "medium",
-        "rainfall_dependency": "low"
+        "rainfall_dependency": "low",
+        "nitrogen_need": "medium",
+        "phosphorus_need": "medium",
+        "potassium_need": "medium",
+        "ph_min": 6.0,
+        "ph_max": 7.0
     }
 }
