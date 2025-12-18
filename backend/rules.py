@@ -61,7 +61,6 @@ def generate_recommendation(user_input):
     ph_rec = ph_status(user_input["ph"], crop_ref)
     alternatives = recommend_alternatives(user_input)
 
-    # جمع alerts
     alerts = []
     if "High" in temp_risk:
         alerts.append("Heat stress expected")
@@ -85,7 +84,7 @@ def generate_recommendation(user_input):
 
     return recommendation
 
-
+"""
 # Example test
 if __name__ == "__main__":
     test_input = {
@@ -100,4 +99,4 @@ if __name__ == "__main__":
     }
     import json
     print(json.dumps(generate_recommendation(test_input), indent=4))
-
+"""
