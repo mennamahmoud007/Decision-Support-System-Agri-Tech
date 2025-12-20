@@ -15,33 +15,61 @@
     </nav> -->
     <div class="main-comtainer">
         <div class="form-section">
-            <h2>Crop Recommedation</h2>
+            <h2>🧪 Crop Recommedation</h2>
             <form id="crop-form">
-                <label>Crop Name</label>
-                <input type="text" name="crop" id="crop" placeholder="e.g., Maize" required>
-                <label>Nitrogen (N)</label>
-                <input type="number" name="N" id="N" placeholder="e.g., 90" required>
-                <label>Phosphorus (P)</label>
-                <input type="number" name="P" id="P" placeholder="e.g., 90" required>
-                <label>Potassium (K)</label>
-                <input type="number" name="K" id="K" placeholder="e.g., 90" required>
-                <label>Temperature (°C)</label>
-                <input type="number" name="temperature" id="temp" placeholder="e.g., 90" required>
-                <label>Humidity (%)</label>
-                <input type="number" name="humidity" id="humidity" placeholder="e.g., 80" required>
-                <label>PH Level</label>
-                <input type="number" name="ph" id="ph" placeholder="e.g., 6.5" step="0.1" required>
-                <label>Rainfall</label>
-                <input type="number" name="rainfall" id="rainfall" placeholder="e.g., 90" required>
-                <div class="buttons">
-                    <button type="reset" id="reset-btn">Reset</button>
-                    <button type="submit" id="rec-btn">Get Recommendation</button>
+                    <div class="grid">
+                        <div class="field">
+                            <label>Crop Name</label>
+                            <input type="text" name="crop" id="crop" placeholder="e.g., Maize" required>
+                        </div>
+
+                        <div class="field">
+                            <label>Nitrogen (N)</label>
+                            <input type="number" name="N" id="N" placeholder="e.g., 90" required>
+                        </div>
+
+                        <div class="field">
+                            <label>Phosphorus (P)</label>
+                            <input type="number" name="P" id="P" placeholder="e.g., 90" required>
+                        </div>    
+
+                        <div class="field">
+                            <label>Potassium (K)</label>
+                            <input type="number" name="K" id="K" placeholder="e.g., 90" required>
+                        </div>
+
+                        <div class="field">
+                            <label>Temperature (°C)</label>
+                            <input type="number" name="temperature" id="temp" placeholder="e.g., 90" required>
+                        </div>
+
+                        <div class="field">   
+                            <label>Humidity (%)</label>
+                            <input type="number" name="humidity" id="humidity" placeholder="e.g., 80" required>
+                        </div>
+
+                        <div class="field">
+                            <label>PH Level</label>
+                            <input type="number" name="ph" id="ph" placeholder="e.g., 6.5" step="0.1" required>
+                        </div>
+
+                        <div class="field">
+                            <label>Rainfall</label>
+                            <input type="number" name="rainfall" id="rainfall" placeholder="e.g., 90" required>
+                        </div>
+
+                    <div class="buttons">
+                        <button type="reset" id="reset-btn">Reset</button>
+                        <button type="submit" id="rec-btn">Get Recommendation</button>
+                    </div>
                 </div>
+
+
             </form>
         </div>
 
         <div id="result" class="result-container"></div>
     </div>
-    <script src="frontend/script.js"></script>
+    <script src="frontend/form.js"></script>
 </body>
 </html>
