@@ -79,7 +79,7 @@ if(form){
         }   catch (err) {
             resultContainer.style.display = "block";
             resultContainer.innerHTML = "";
-            addCard("❌ Server Error", "Cannot connect to backend", "error");
+            addCard("Recommendation Will Appear Here, Stay Tuned");
             console.error(err);
         }
 
