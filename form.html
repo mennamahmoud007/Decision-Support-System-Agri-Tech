@@ -4,72 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="frontend/form.css">
-    <title>Crop Recommedation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Crop Recommendation — Sand2Seed</title>
 </head>
 <body>
-    <!-- <nav class="navbar">
-        <div class="logo">🌱 Crop Recommedation</div>
-        <ul class="navLinks">
-
+ 
+    <!-- ───────────── NAVBAR ───────────── -->
+    <nav class="navbar">
+        <a class="nav-logo" href="index.html">
+            <span class="logo-icon">🌱</span>
+            <span class="logo-text">Sand<span class="logo-accent">2</span>Seed</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#aboutus">About</a></li>
+            <li><a href="index.html#sustainabletips">Tips</a></li>
+            <li><a href="form.html" class="nav-cta nav-cta--active">Crop Recommendation</a></li>
         </ul>
-    </nav> -->
-    <div class="main-comtainer">
-        <div class="form-section">
-            <h2>🧪 Crop Recommedation</h2>
-            <form id="crop-form">
-                    <div class="grid">
-                        <div class="field">
-                            <label>Crop Name</label>
-                            <input type="text" name="crop" id="crop" placeholder="e.g., Maize" required>
-                        </div>
-
-                        <div class="field">
-                            <label>Nitrogen (N)</label>
-                            <input type="number" name="N" id="N" placeholder="e.g., 90" required>
-                        </div>
-
-                        <div class="field">
-                            <label>Phosphorus (P)</label>
-                            <input type="number" name="P" id="P" placeholder="e.g., 90" required>
-                        </div>    
-
-                        <div class="field">
-                            <label>Potassium (K)</label>
-                            <input type="number" name="K" id="K" placeholder="e.g., 90" required>
-                        </div>
-
-                        <div class="field">
-                            <label>Temperature (°C)</label>
-                            <input type="number" name="temperature" id="temp" placeholder="e.g., 90" required>
-                        </div>
-
-                        <div class="field">   
-                            <label>Humidity (%)</label>
-                            <input type="number" name="humidity" id="humidity" placeholder="e.g., 80" required>
-                        </div>
-
-                        <div class="field">
-                            <label>PH Level</label>
-                            <input type="number" name="ph" id="ph" placeholder="e.g., 6.5" step="0.1" required>
-                        </div>
-
-                        <div class="field">
-                            <label>Rainfall</label>
-                            <input type="number" name="rainfall" id="rainfall" placeholder="e.g., 90" required>
-                        </div>
-
-                    <div class="buttons">
-                        <button type="reset" id="reset-btn">Reset</button>
-                        <button type="submit" id="rec-btn">Get Recommendation</button>
-                    </div>
-                </div>
-
-
-            </form>
+    </nav>
+ 
+    <!-- ───────────── PAGE ───────────── -->
+    <div class="page-wrapper">
+ 
+        <div class="page-header">
+            <p class="page-eyebrow">AI-Powered Analysis</p>
+            <h1 class="page-title">Crop Recommendation</h1>
+            <p class="page-sub">Enter your soil and climate data to get personalised farming advice.</p>
         </div>
-
-        <div id="result" class="result-container"></div>
+ 
+        <div class="main-container">
+ 
+            <!-- FORM PANEL -->
+            <div class="form-section">
+                <h2>🧪 Soil & Climate Data</h2>
+                <form id="crop-form">
+                    <div class="grid">
+ 
+                        <div class="field field--full">
+                            <label for="crop">Crop Name</label>
+                            <input type="text" name="crop" id="crop" placeholder="e.g., maize" required>
+                            <span class="field-hint">Must match a crop in our dataset (e.g. maize, rice, banana)</span>
+                        </div>
+ 
+                        <div class="field">
+                            <label for="N">Nitrogen (N)</label>
+                            <input type="number" name="N" id="N" placeholder="e.g., 90" min="0" required>
+                        </div>
+ 
+                        <div class="field">
+                            <label for="P">Phosphorus (P)</label>
+                            <input type="number" name="P" id="P" placeholder="e.g., 42" min="0" required>
+                        </div>
+ 
+                        <div class="field">
+                            <label for="K">Potassium (K)</label>
+                            <input type="number" name="K" id="K" placeholder="e.g., 43" min="0" required>
+                        </div>
+ 
+                        <div class="field">
+                            <label for="temp">Temperature (°C)</label>
+                            <input type="number" name="temperature" id="temp" placeholder="e.g., 28" step="0.1" required>
+                        </div>
+ 
+                        <div class="field">
+                            <label for="humidity">Humidity (%)</label>
+                            <input type="number" name="humidity" id="humidity" placeholder="e.g., 80" min="0" max="100" required>
+                        </div>
+ 
+                        <div class="field">
+                            <label for="ph">pH Level</label>
+                            <input type="number" name="ph" id="ph" placeholder="e.g., 6.5" step="0.1" min="0" max="14" required>
+                        </div>
+ 
+                        <div class="field">
+                            <label for="rainfall">Rainfall (mm)</label>
+                            <input type="number" name="rainfall" id="rainfall" placeholder="e.g., 202" min="0" required>
+                        </div>
+ 
+                    </div>
+ 
+                    <div class="buttons">
+                        <button type="reset" id="reset-btn">↺ Reset</button>
+                        <button type="submit" id="rec-btn">Get Recommendation →</button>
+                    </div>
+                </form>
+            </div>
+ 
+            <!-- RESULT PANEL -->
+            <div id="result" class="result-container" style="display:none;"></div>
+ 
+        </div>
     </div>
+ 
+    <footer class="footer">
+        <p>© 2026 Sand2Seed — From Sand to Seed to Sustainability.</p>
+    </footer>
+ 
     <script src="frontend/form.js"></script>
 </body>
 </html>

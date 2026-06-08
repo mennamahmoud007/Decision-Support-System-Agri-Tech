@@ -7,131 +7,209 @@
     <link rel="icon" href="frontend/imgs/crop.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=BBH+Bogle&display=swap" rel="stylesheet">
-    <title>Crop Recommedation System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Sand2Seed — Crop Recommendation System</title>
 </head>
 <body>
-    <main class="landing">
-        <h1 class="site-head"><img src="frontend/header.png" alt=""></h1>
-        <p style="font-size: xx-large;">
-            From Sand to Seed to Sustainability.
-        </p>
-        <div class="cards">
-            <div class="card1">
-                <img src="https://i.ibb.co/356zpGTt/aboutus-V4.jpg" alt="aboutus" title="About Us">
-                <h2>About Us</h2>
-                <button>Learn more</button>
-            </div>
-            <div class="card2">
-                <img src="https://i.ibb.co/0pJbRV5z/croprecv3.png" alt="croprec" title="Crop Recommedation">
-                <h2>Crop Recommedation</h2>
-                <a href="form.html"><button>Learn more</button></a>
-            </div>
-            <div class="card3">
-                <img src="https://i.ibb.co/kskpRxnB/tipsv2.png" alt="farmingtips" title="Farming Tips">
-                <h2>Sustainability Tips</h2>
-                <button><h4>Learn more</h4></button>
-            </div>
-        </div>
-    </main>
-    <section id="aboutus">
-        <h2>About Us</h2>
-        <p>
-            Smart Crop Recommendation System is a state-of-the-art decision support platform designed to help farmers 
-            make informed choices about their crops. By combining soil analysis, climate data, and water availability, 
-            the system delivers tailored recommendations for optimal agricultural productivity.
-        </p>
-        <h3>Our Mission</h3>
-        <p>
-            To provide farmers with a reliable, user-friendly tool that enables efficient crop planning and promotes sustainable farming practices in newly cultivated lands.
-        </p>
-        <h3>Our Vision</h3>
-        <p>
-            To become the leading digital platform for intelligent agriculture, bridging the gap between environmental data and practical farming decisions.
-        </p>
-        <h3>Future Enhancements</h3>
-        <ul>
-            <li>Automated irrigation alerts and crop growth monitoring.</li>
-            <li>Machine learning-based personalization for crop suggestions.</li>
-            <li>Mobile application support for easy on-field access.</li>
+ 
+    <!-- ───────────── NAVBAR ───────────── -->
+    <nav class="navbar">
+        <a class="nav-logo" href="#">
+            <span class="logo-icon">🌱</span>
+            <span class="logo-text">Sand<span class="logo-accent">2</span>Seed</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#aboutus">About</a></li>
+            <li><a href="#sustainabletips">Tips</a></li>
+            <li><a href="form.html" class="nav-cta">Get Recommendation</a></li>
         </ul>
-    </section>
-
-    <section id="sustainabletips">
-        <div class="tip1">
-            <h2>💧 1️⃣ Irrigation</h2>
-            <p>
-                Use drip irrigation instead of flooding,
-                Irrigate early morning or after sunset to reduce evaporation,
-                Do not over-irrigate — excess water damages the soil,
-                If water is limited: 
-                Reduce irrigation frequency,
-                Add organic matter to improve water retention
-            </p>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+ 
+    <!-- ───────────── HERO ───────────── -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <p class="hero-eyebrow">Smart Agriculture Platform</p>
+            <h1 class="hero-title" aria-label="Sand2Seed">
+                <span class="logo-word logo-sand">
+                    <span>S</span><span>A</span><span>N</span><span>D</span>
+                </span>
+                <span class="logo-divider">
+                    <span class="logo-divider-line"></span>
+                    <span class="logo-divider-icon">🌱</span>
+                    <span class="logo-divider-line"></span>
+                </span>
+                <span class="logo-word logo-seed">
+                    <span>S</span><span>E</span><span>E</span><span>D</span>
+                </span>
+            </h1>
+            <p class="hero-tagline">From Sand to Seed to Sustainability.</p>
+            <div class="hero-actions">
+                <a href="form.html" class="btn-primary">Get Crop Recommendation</a>
+                <a href="#aboutus" class="btn-secondary">Learn More</a>
+            </div>
         </div>
-
-        <div class="tip2">
-            <h2>🌱 2️⃣ Soil Care</h2>
-            <p>
-                Add compost or organic fertilizer before planting,
-                Avoid excessive chemical fertilizers,
-                Do not plow too deep to protect beneficial soil organisms,
-                Sandy soil needs:
-                More organic matter,
-                Frequent irrigation with small amounts of water
-            </p>
-        </div>
-
-        <div class="tip3">
-            <h2>🌿 3️⃣ Crop Selection</h2>
-            <p>
-                Choose heat- and drought-tolerant crops, 
-                If water is limited, prefer: Barley,Sorghum,Sesame,Date palm.
-                Avoid high-water-demand crops in desert conditions.
-                Always ask: Is this crop suitable for the land and environment?
-            </p>
-        </div>
-
-        <div class="tip4">
-            <h2>☀️ 4️⃣ Temperature & Climate</h2>
-            <p>
-                During extreme heat:
-                Avoid irrigation at noon, 
-                Use mulch (straw or plant residues) on soil surface,
-                Monitor plants: Yellow leaves → nutrient deficiency, Wilting → improper irrigation.
-            </p>
-        </div>
-
-        <div class="tip5">
-            <h2>🐜 5️⃣ Protecting the Desert Ecosystem</h2>
-            <p>
-                Preserve native desert plants around the field.
-                Do not remove all natural vegetation.
-                Avoid planting too close to sand dunes.
-                Minimize chemical pesticide and fertilizer use.
-            </p>
-        </div>
-
-        <div class="tip6">
-            <h2>♻️ 6️⃣ Sustainability</h2>
-            <p>
-                Save water to keep the land productive long-term.
-                Sustainable farming improves yield and protects nature.
-                Poor farming decisions cause long-term land degradation.
-            </p>
-        </div>
-
-        <div class="tip7">
-            <h2>📋 7️⃣ Daily Worker Checklist</h2>
-            <p>
-                ✔ Check plant condition. <br>
-                ✔ Irrigate as recommended. <br>
-                ✔ Do not overuse fertilizers. <br>
-                ✔ Protect native desert plants. <br>
-                ✔ Report any issues immediately.
-            </p>
+ 
+        <div class="hero-cards">
+            <div class="hero-card" id="card-about" onclick="scrollToSection('aboutus')">
+                <div class="hero-card-img">
+                    <img src="https://i.ibb.co/356zpGTt/aboutus-V4.jpg" alt="About Us">
+                </div>
+                <div class="hero-card-body">
+                    <h3>About Us</h3>
+                    <p>Our mission, vision, and the team behind Sand2Seed.</p>
+                    <span class="card-link">Explore →</span>
+                </div>
+            </div>
+ 
+            <div class="hero-card hero-card--featured" onclick="window.location='form.html'">
+                <div class="hero-card-img">
+                    <img src="https://i.ibb.co/0pJbRV5z/croprecv3.png" alt="Crop Recommendation">
+                </div>
+                <div class="hero-card-body">
+                    <span class="featured-badge">Try it now</span>
+                    <h3>Crop Recommendation</h3>
+                    <p>Enter your soil & climate data and get personalized crop advice.</p>
+                    <span class="card-link">Open Tool →</span>
+                </div>
+            </div>
+ 
+            <div class="hero-card" id="card-tips" onclick="scrollToSection('sustainabletips')">
+                <div class="hero-card-img">
+                    <img src="https://i.ibb.co/kskpRxnB/tipsv2.png" alt="Sustainability Tips">
+                </div>
+                <div class="hero-card-body">
+                    <h3>Sustainability Tips</h3>
+                    <p>Practical guidance for farming in arid and desert environments.</p>
+                    <span class="card-link">Read Tips →</span>
+                </div>
+            </div>
         </div>
     </section>
+ 
+    <!-- ───────────── ABOUT ───────────── -->
+    <section id="aboutus" class="section-about">
+        <div class="section-inner">
+            <div class="section-label">Who We Are</div>
+            <h2 class="section-title">About Us</h2>
+            <p class="section-lead">
+                Sand2Seed is a state-of-the-art decision support platform designed to help farmers 
+                make informed choices about their crops — combining soil analysis, climate data, 
+                and water availability to deliver tailored recommendations for optimal agricultural productivity.
+            </p>
+ 
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">🎯</div>
+                    <h3>Our Mission</h3>
+                    <p>To provide farmers with a reliable, user-friendly tool that enables efficient crop planning and promotes sustainable farming practices in newly cultivated lands.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">🔭</div>
+                    <h3>Our Vision</h3>
+                    <p>To become the leading digital platform for intelligent agriculture, bridging the gap between environmental data and practical farming decisions.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">🚀</div>
+                    <h3>Future Enhancements</h3>
+                    <ul>
+                        <li>Automated irrigation alerts and crop growth monitoring</li>
+                        <li>Machine learning-based personalization for crop suggestions</li>
+                        <li>Mobile application support for easy on-field access</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- ───────────── TIPS ───────────── -->
+    <section id="sustainabletips" class="section-tips">
+        <div class="section-inner">
+            <div class="section-label">Best Practices</div>
+            <h2 class="section-title">Sustainability Tips</h2>
+            <p class="section-lead">Practical guidance for farmers working in arid and desert environments.</p>
+ 
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="tip-emoji">💧</div>
+                    <h3>Irrigation</h3>
+                    <p>Use drip irrigation instead of flooding. Irrigate early morning or after sunset to reduce evaporation. Avoid over-irrigation — excess water damages soil structure. If water is limited, add organic matter to improve retention.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-emoji">🌱</div>
+                    <h3>Soil Care</h3>
+                    <p>Add compost or organic fertilizer before planting. Avoid excessive chemical fertilizers and deep plowing. Sandy soil needs extra organic matter and frequent small-amount irrigation.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-emoji">🌿</div>
+                    <h3>Crop Selection</h3>
+                    <p>Choose heat- and drought-tolerant crops. If water is limited, prefer Barley, Sorghum, Sesame, or Date Palm. Avoid high-water-demand crops in desert conditions.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-emoji">☀️</div>
+                    <h3>Temperature & Climate</h3>
+                    <p>During extreme heat, avoid irrigation at noon. Use mulch (straw or plant residues) on the soil surface. Yellow leaves indicate nutrient deficiency; wilting indicates improper irrigation.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-emoji">🐜</div>
+                    <h3>Desert Ecosystem</h3>
+                    <p>Preserve native desert plants around the field. Do not remove all natural vegetation or plant too close to sand dunes. Minimize chemical pesticide and fertilizer use.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-emoji">♻️</div>
+                    <h3>Sustainability</h3>
+                    <p>Save water to keep the land productive long-term. Sustainable farming improves yield and protects nature. Poor decisions cause long-term land degradation.</p>
+                </div>
+            </div>
+ 
+            <!-- Checklist highlight -->
+            <div class="checklist-banner">
+                <h3>📋 Daily Worker Checklist</h3>
+                <ul>
+                    <li>Check plant condition</li>
+                    <li>Irrigate as recommended</li>
+                    <li>Do not overuse fertilizers</li>
+                    <li>Protect native desert plants</li>
+                    <li>Report any issues immediately</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- ───────────── FOOTER ───────────── -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <span class="logo-icon">🌱</span>
+                <span class="logo-text">Sand<span class="logo-accent">2</span>Seed</span>
+                <p>Empowering farmers with data-driven crop intelligence.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigate</h4>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#aboutus">About Us</a></li>
+                    <li><a href="#sustainabletips">Sustainability Tips</a></li>
+                    <li><a href="form.html">Crop Recommendation</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Platform</h4>
+                <ul>
+                    <li><a href="#">How It Works</a></li>
+                    <li><a href="#">Dataset Info</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Sand2Seed. Built for sustainable agriculture.</p>
+        </div>
+    </footer>
+ 
     <script src="frontend/script.js"></script>
 </body>
 </html>
